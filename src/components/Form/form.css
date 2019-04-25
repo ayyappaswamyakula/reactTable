@@ -1,0 +1,48 @@
+
+#custmoneName{
+    height: 32px;
+    width: 250px;margin-top:8px;
+	
+}
+#monthOneProduct{
+	    width: 249px;
+    height: 44px;
+}
+#monthOneAmount{
+	    height: 38px;
+    width: 244px;
+    margin-left: 264px;
+    position: absolute;
+    top: 118px;
+	
+}
+
+#monthTwoProduct{
+	    width: 245px;
+    height: 44px;
+}
+#monthTwoAmount{
+	    height: 38px;
+    width: 244px;
+    margin-left: 264px;
+    position: absolute;
+    top: 232px;
+}
+#monthThreeProduct{
+	    width: 245px;
+    height: 44px;
+}
+#monthThreeAmount{
+	    height: 38px;
+    width: 244px;
+    margin-left: 264px;
+    position: absolute;
+    top: 349px;
+}
+button{
+	    margin-left: 194px;
+    height: 50px;
+    width: 122px;
+    position: relative;
+    top: -8px;
+}
