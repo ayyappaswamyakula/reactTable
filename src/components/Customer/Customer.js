@@ -16,14 +16,14 @@ class Customer extends Component {
           transactions: {
             monthOne: [
               {transactionId: 45, product: "TV", amount: 120},
-              {transactionId: 78, product: "Watch", amount: 70}
+              {transactionId: 78, product: "Watch", amount: 120}
             ],
             monthTwo: [
-              {transactionId: 785, product: "Book", amount: 40},
-              {transactionId: 25, product: "Mobile", amount: 300}
+              {transactionId: 785, product: "Book", amount: 120},
+              {transactionId: 25, product: "Mobile", amount: 120}
             ],
             monthThree: [
-              {transactionId: 52, product: "Shirt", amount: 110}
+              {transactionId: 52, product: "Shirt", amount: 120}
             ],
           }
         }
@@ -145,13 +145,13 @@ class Customer extends Component {
                                 data.transactions.monthOne.map((mOne, b) => {
                                   let monthPoints = null
                                   if(mOne.amount > 50 && mOne.amount <= 100){
-                                      monthPoints = (mOne.amount - 50) * 1
-                                      monthOneTotal.push((mOne.amount - 50) * 1)
-                                      overall.push((mOne.amount - 50) * 1)
+                                      monthPoints = (50) * 1
+                                      monthOneTotal.push((50) * 1)
+                                      overall.push((50) * 1)
                                   } else if(mOne.amount > 50 && mOne.amount > 100){
-                                      monthPoints = ((mOne.amount - 50) * 1) + ((mOne.amount - 100) * 2)
-                                      monthOneTotal.push(((mOne.amount - 50) * 1) + ((mOne.amount - 100) * 2))
-                                      overall.push(((mOne.amount - 50) * 1) + ((mOne.amount - 100) * 2))
+                                      monthPoints = ((50) * 1) + ((mOne.amount - 100) * 2)
+                                      monthOneTotal.push(((50) * 1) + ((mOne.amount - 100) * 2))
+                                      overall.push(((50) * 1) + ((mOne.amount - 100) * 2))
                                   } else {
                                       monthPoints = 0
                                   }
@@ -162,7 +162,6 @@ class Customer extends Component {
                                         <li>Transaction Id: {mOne.transactionId}</li>
                                         <li>Product Name: {mOne.product}</li>
                                         <li>Price: {mOne.amount}</li>
-                                        <li><b>Points on Product:</b> {monthPoints}</li>
                                       </ul>
                                     </div>
                                   )
@@ -181,13 +180,13 @@ class Customer extends Component {
                                 data.transactions.monthTwo.map((mTwo, b) => {
                                   let monthPoints = null
                                   if(mTwo.amount > 50 && mTwo.amount <= 100){
-                                      monthPoints = (mTwo.amount - 50) * 1
-                                      monthTwoTotal.push((mTwo.amount - 50) * 1)
-                                      overall.push((mTwo.amount - 50) * 1)
+                                      monthPoints = (50) * 1
+                                      monthTwoTotal.push((50) * 1)
+                                      overall.push((50) * 1)
                                   } else if(mTwo.amount > 50 && mTwo.amount > 100){
-                                      monthPoints = ((mTwo.amount - 50) * 1) + ((mTwo.amount - 100) * 2)
-                                      monthTwoTotal.push(((mTwo.amount - 50) * 1) + ((mTwo.amount - 100) * 2))
-                                      overall.push(((mTwo.amount - 50) * 1) + ((mTwo.amount - 100) * 2))
+                                      monthPoints = ((50) * 1) + ((mTwo.amount - 100) * 2)
+                                      monthTwoTotal.push(((50) * 1) + ((mTwo.amount - 100) * 2))
+                                      overall.push(((50) * 1) + ((mTwo.amount - 100) * 2))
                                   } else {
                                       monthPoints = 0
                                   }
@@ -198,7 +197,6 @@ class Customer extends Component {
                                         <li>Transaction Id: {mTwo.transactionId}</li>
                                         <li>Product Name: {mTwo.product}</li>
                                         <li>Price: {mTwo.amount}</li>
-                                        <li><b>Points on Product:</b> {monthPoints}</li>
                                       </ul>
                                     </div>
                                   )
@@ -217,14 +215,14 @@ class Customer extends Component {
                                 data.transactions.monthThree.map((mThree, b) => {
                                   let monthPoints = null
                                   if(mThree.amount > 50 && mThree.amount <= 100){
-                                      monthPoints = (mThree.amount - 50) * 1
-                                      monthThreeTotal.push((mThree.amount - 50) * 1)
-                                      overall.push((mThree.amount - 50) * 1)
+                                      monthPoints = (50) * 1
+                                      monthThreeTotal.push((50) * 1)
+                                      overall.push((50) * 1)
                                   } else if(mThree.amount > 50 && mThree.amount > 100){
-                                      monthPoints = ((mThree.amount - 50) * 1) + ((mThree.amount - 100) * 2)
-                                      monthThreeTotal.push(((mThree.amount - 50) * 1) + ((mThree.amount - 100) * 2))
-                                      overall.push(((mThree.amount - 50) * 1) + ((mThree.amount - 100) * 2))
-                                    } else {
+                                      monthPoints = ((50) * 1) + ((mThree.amount - 100) * 2)
+                                      monthThreeTotal.push(((50) * 1) + ((mThree.amount - 100) * 2))
+                                      overall.push(((50) * 1) + ((mThree.amount - 100) * 2))
+                                  } else {
                                       monthPoints = 0
                                   }
                                   return (
@@ -234,7 +232,6 @@ class Customer extends Component {
                                         <li>Transaction Id: {mThree.transactionId}</li>
                                         <li>Product Name: {mThree.product}</li>
                                         <li>Price: {mThree.amount}</li>
-                                        <li><b>Points on Product:</b> {monthPoints}</li>
                                       </ul>
                                     </div>
                                   )
